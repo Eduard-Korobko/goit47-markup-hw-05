@@ -7,6 +7,8 @@
     --primary-text-color: #212121;
     --title-text-color: #757575;
     --acent-color: #2196F3;
+    --time-transition:250ms;
+    --cubic-transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -66,7 +68,7 @@ li{
     min-width: 1200px;
     border-bottom: 1px solid #ECECEC;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--time-transition) var(--cubic-transition);
 
 }
 
@@ -87,9 +89,7 @@ li{
 .nav :hover,
 .nav :focus {
     color:var(--acent-color);
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: color var(--time-transition) var(--cubic-transition);
 }
 
 .site-nav{
@@ -106,7 +106,6 @@ li{
 
 .site-nav .color-active {
     position: relative;
-    
     color: var(--acent-color);
 
 }
@@ -200,7 +199,7 @@ li{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--time-transition) var(--cubic-transition);
     cursor: pointer;
 }
 
@@ -218,6 +217,11 @@ li{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity var(--time-transition) var(--cubic-transition);
+
+    z-index: 999;
 }
 
 .backdrop.is-hidden{
@@ -246,7 +250,7 @@ li{
     fill: #000000;
 }
 .one a>svg{
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--time-transition) var(--cubic-transition);
 
 }
 
@@ -525,7 +529,7 @@ fill: var(--acent-color);
     fill: #AFB1B8;;
 }
 .team a>svg{
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--time-transition) var(--cubic-transition);
 
 }
 
@@ -548,7 +552,7 @@ fill: #FFFFFF;
     /* outline: 1px solid transparent; */
     border-radius: 50%;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--time-transition) var(--cubic-transition);
 }
 
 .team a:hover,
@@ -598,7 +602,7 @@ background-color: var(--acent-color);
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color var(--time-transition) var(--cubic-transition);
 }
 .client-list .link:hover,
 .client-list .link:focus{
@@ -606,7 +610,7 @@ background-color: var(--acent-color);
 }
 
 .client-list .link svg{
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--time-transition) var(--cubic-transition);
 }
 
 .client-list .link:hover svg,
@@ -655,9 +659,9 @@ background-color: var(--acent-color);
 
         padding: 6px 22px;
 
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color var(--time-transition) var(--cubic-transition),
+                    box-shadow var(--time-transition) var(--cubic-transition),
+                    color var(--time-transition) var(--cubic-transition);
     }
 
     .button-list .item {
@@ -705,7 +709,7 @@ background-color: var(--acent-color);
 
 .project-list-portfolio .item-link{
     display: block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--time-transition) var(--cubic-transition);
 }
 /* =========================================== */
 .image{
@@ -721,7 +725,7 @@ background-color: var(--acent-color);
     height: 100%;
     top: 100%;
     background-color:rgba(33, 150, 243, 0.9);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--time-transition) var(--cubic-transition);
 }
 /* ---------------- */
 .text{
@@ -733,7 +737,7 @@ background-color: var(--acent-color);
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: #ffffff;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--time-transition) var(--cubic-transition);
 }
 
 .item-link:hover .text{
@@ -822,7 +826,7 @@ background-color: var(--acent-color);
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--time-transition) var(--cubic-transition);
 
 }
 
@@ -878,7 +882,7 @@ address {
 .footer .item-address :focus {
     color: var(--acent-color);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--time-transition) var(--cubic-transition);
 
 }
 /* ДЗ№3 Блочная модель */
