@@ -258,22 +258,39 @@ li{
 }
 
 /* ======================================== */
-.icon-close{
-    width: 18px;
-    height: 18px;
-    fill: #000000;
+.btn-close{
+    position:absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    background-image: url(../images/close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 }
-.one a>svg{
+
+/* .icon-close{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 18px;    
+    height: 18px;
+    fill: #b91616ce;
+} */
+/* .one a>svg{
     transition: fill var(--time-transition) var(--cubic-transition);
 
-}
+} */
 
-.one a:hover svg,
+/* .one a:hover svg,
 .one a:focus svg{
 fill:var(--acent-color); 
-}
+} */
 
-.one a{
+/* .one a{
     position: absolute;
     top: 8px;
     right: 8px;
@@ -285,12 +302,12 @@ fill:var(--acent-color);
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-}
+} */
 
-.one a:hover,
+/* .one a:hover,
 .one a:focus {
 fill: var(--acent-color); 
-}
+} */
 /* ======================================== */
 
 /* .btn-close svg{
