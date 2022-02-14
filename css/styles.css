@@ -56,6 +56,8 @@ li{
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
+    transition: color var(--time-transition) var(--cubic-transition);
 }
 
 /* Навигационные ссылки в верхней линии */
@@ -84,12 +86,13 @@ li{
 .main-nav{
     display: flex;
     align-items: center;
+
 }
 
 .nav :hover,
 .nav :focus {
     color:var(--acent-color);
-    transition: color var(--time-transition) var(--cubic-transition);
+    /* transition: color var(--time-transition) var(--cubic-transition); */
 }
 
 .site-nav{
@@ -102,6 +105,9 @@ li{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    transition: color var(--time-transition) var(--cubic-transition);
+
 }
 
 .site-nav .color-active {
@@ -133,6 +139,9 @@ li{
     display: flex;
     align-items: center;
     color: var(--title-text-color);
+
+    transition: color var(--time-transition) var(--cubic-transition);
+
 }
 
 .contact-nav .item + .item {
@@ -250,8 +259,8 @@ li{
 
 /* ======================================== */
 .icon-close{
-    width: 11px;
-    height: 11px;
+    width: 18px;
+    height: 18px;
     fill: #000000;
 }
 .one a>svg{
@@ -380,7 +389,7 @@ fill: var(--acent-color);
     margin: 0;
 }
 
-/* Секция 3 Наши проекты */
+/* Секция 3 Чем мы занимаемся, Наши проекты */
 .projects{
     padding-bottom: 94px;
 }
@@ -395,24 +404,25 @@ fill: var(--acent-color);
 
 .project-list .item {
     position: relative;
-    width: 370px;
+    /* width: 370px; */
     margin-right: 30px;
 }
 /* ===================================== */
-.project-list .item::after{
+/* .project-list .item::after{
     content: '';
     position: absolute;
     bottom: 0;
     width: 370px;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
+} */
 
-    z-index: 1;
-}
 .project-list .item p{
-    display: block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    bottom: 27px;
+    bottom:0;
     left: 50%;
     transform: translate(-50%);
 
@@ -426,7 +436,10 @@ fill: var(--acent-color);
     white-space: nowrap;
     color: #ffffff;
 
-    z-index: 2;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    /* z-index: 2; */
 }
 /* ===================================== */
 .project-list .item img{
@@ -863,18 +876,27 @@ address {
     display: inline-block;
     color: #FFFFFF;
     margin-bottom: 20px;
+
+    transition: color var(--time-transition) var(--cubic-transition);
+
 }
 .footer .title-white {
     color: #FFFFFF;
+
+    transition: color var(--time-transition) var(--cubic-transition);
+
 }
 .footer .title-rgba {  
     color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--time-transition) var(--cubic-transition);
 
 }
 .address .item{
     display: block;
     margin-bottom: 9px;
 }
+
 .address .item:last-child{
     margin-bottom: 0px;
 }
@@ -886,9 +908,6 @@ address {
 .footer .item-address :hover,
 .footer .item-address :focus {
     color: var(--acent-color);
-
-    transition: color var(--time-transition) var(--cubic-transition);
-
 }
 /* ДЗ№3 Блочная модель */
 .container {
